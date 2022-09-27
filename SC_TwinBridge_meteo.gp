@@ -1,4 +1,4 @@
-set title "Shaver's Creek Twin Bridge Air Temperature (C), Total Rainfall (mm), and Relative Humidity (%) \n Last Run: " .strftime("%a %b %d %H:%M", time(0)+28800)
+set title "Shaver's Creek Twin Bridge Air Temperature (C), Relative Humidity, and Precipitation (mm) \n Last Run: " .strftime("%a %b %d %H:%M EST", time(0)-18000)
 set term png
 set xdata time
 set timefmt '%Y-%m-%d %H:%M:%S'
