@@ -5,13 +5,14 @@ Requested by Brandon Forsythe
 Generate time series plot on a 7-day rolling window from data in database
 tables SC_TwinBridge_stream and SC_TwinBridge_meteo.  
 
-stream_plot.gp is a gnuplot recipe for plotting SC_TwinBridge_stream
-data from columns TmStamp, SW_Depth_m, SW_Depth_m_Avg, and WaterTemp_C.
+SC_TwinBridge_stream.gp is a gnuplot recipe for plotting
+SC_TwinBridge_stream data from columns TmStamp, SW_Depth_m,
+and WaterTemp_C.
 
-meteo_plot.gp will be a similar recipe for plotting SC_TwinBridge_meteo
-data.
+SC_TwinBridge_meteo.gp is recipe for plotting SC_TwinBridge_meteo
+data from columns TmStamp, AirTemp_C, Rel_Hum, and Rain_mm_Tot.
 
-A script will pull CSV data hourly from
-http://www.czo.psu.edu/data/ShaversCreek/sc_twinbridge.html, generate
-the two plot images.  A web page will display the resulting images.
+genplot.sh pulls CSV data from http://www.czo.psu.edu/SQL_Query3.php
+via form posting using curl.  The resulting CSV data are then used by
+the above gnuplot recipes to produce PNG formatted images.
 
