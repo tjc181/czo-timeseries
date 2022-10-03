@@ -10,6 +10,8 @@ startDate=$(date '+%Y-%m-%d %H:%M:%S' -d '7 days ago')
 endDate=$(date '+%Y-%m-%d %H:%M:%S')
 endPoint=http://www.czo.psu.edu/SQL_Query3.php
 
+imgdir=/net/eesiwww/www.czo.psu.edu/htdocs/Images
+
 tables="SC_TwinBridge_stream SC_TwinBridge_meteo"
 
 for table in $tables
@@ -21,7 +23,7 @@ do
         -d startDate=$startDate \
         -d endDate=$endDate \
         $endPoint > $table.csv
-	gnuplot < $table.gp > $table.png
+	gnuplot < $table.gp > $imgdir/$table.png
 done
 
 
