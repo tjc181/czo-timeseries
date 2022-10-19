@@ -16,3 +16,13 @@ genplot.sh pulls CSV data from http://www.czo.psu.edu/SQL_Query3.php
 via form posting using curl.  The resulting CSV data are then used by
 the above gnuplot recipes to produce PNG formatted images.
 
+genplot.sh takes two optional arguments.  This is quick and dirty so no
+real argument processing is performed at this time -- if argument 2 is
+needed, argument 1 is required.
+
+Usage: genplot.sh [(program directory) output directory]
+
+Program directory is the absolute or relative path to the genplot.sh
+program.  This directory contains the GNUplot recipes.
+
+Output directory is the directory where generated images are placed.
