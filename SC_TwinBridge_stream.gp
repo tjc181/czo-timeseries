@@ -1,4 +1,5 @@
 set title "Shaver's Creek Twin Bridge Surface Water Depth (m) and Water Temperature (C)\n Last Run: " .strftime("%a %b %d %H:%M EST", time(0)-18000)
+set key outside bottom center
 set term png
 set xdata time
 set timefmt '%Y-%m-%d %H:%M:%S'
