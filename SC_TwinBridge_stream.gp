@@ -4,9 +4,9 @@ set xdata time
 set timefmt '%Y-%m-%d %H:%M:%S'
 set datafile separator ','
 set format x "%Y-%m-%d"
-set xtics rotate timedate
-set ytics nomirror numeric
-set y2tics nomirror numeric
+set xtics rotate 
+set ytics nomirror 
+set y2tics nomirror 
 set ylabel "Depth (m)"
 set y2label "Temp (C)"
 set grid
