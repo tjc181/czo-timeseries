@@ -5,6 +5,7 @@ set xdata time
 set timefmt '%Y-%m-%d %H:%M:%S'
 set datafile separator ','
 set format x "%Y-%m-%d"
+set offset graph 0, 0, 0.001, 0.001
 set xtics rotate 
 set ytics nomirror 
 set y2tics nomirror 
