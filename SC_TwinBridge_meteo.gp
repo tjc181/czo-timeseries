@@ -1,4 +1,4 @@
-set title offset 2,0 enhanced "Shaver's Creek Twin Bridge Air Temperature (C), Relative Humidity, \n and Precipitation (mm) \n Last Run: " .strftime("%a %b %d %H:%M EST", time(0)-18000)
+set title offset 2,0 enhanced "Shaver's Creek Twin Bridge Air Temperature (C), Relative Humidity, \n and Precipitation (mm) \n Last Run: " .strftime("%a %b %d %H:%M UTC", time(0))
 set key outside bottom center
 set term png
 set xdata time
