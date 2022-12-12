@@ -1,4 +1,4 @@
-set title offset 2,0 enhanced "Shaver's Creek Outlet at Church Air Temperature (C), Relative Humidity, \n and Precipitation (mm) \n Last Run: " .strftime("%a %b %d %H:%M UTC", time(0))
+set title offset 2,0 enhanced "Shaver's Creek Outlet at Church Surface Water Depth (m) and Water Temperature (C) \n Last Run: " .strftime("%a %b %d %H:%M UTC", time(0))
 set key outside bottom center
 set term png
 set xdata time
@@ -9,9 +9,8 @@ set offset graph 0, 0, 0.001, 0.001
 set xtics rotate 
 set ytics nomirror 
 set y2tics nomirror 
-set ylabel "Temp (C) / Rain Total (mm)"
-set y2label "Relative Humidity (%)"
+set ylabel "Depth (m)"
+set y2label "Temp (C)"
 set grid
-plot "SC_TwinBridge_meteo.csv" using 1:3 title "Air Temp" with lines axis x1y1, \
-     "SC_TwinBridge_meteo.csv" using 1:4 title "Relative Humidity" with lines axis x1y2, \
-     "SC_TwinBridge_meteo.csv" using 1:5 title "Rain Total" with lines axis x1y1
+plot "SC_TwinBridge_stream.csv" using 1:4 title "SW Depth" with lines axis x1y1, \
+     "SC_TwinBridge_stream.csv" using 1:5 title "Water Temp" with lines axis x1y2
