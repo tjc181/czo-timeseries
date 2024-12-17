@@ -8,7 +8,7 @@
 
 startDate=$(date '+%Y-%m-%d %H:%M:%S' -d '7 days ago')
 endDate=$(date '+%Y-%m-%d %H:%M:%S')
-endPoint="http://www.czo.psu.edu/SQL_Query3.php"
+endPoint="https://www.czo.psu.edu/SQL_Query3.php"
 
 tables="SC_TwinBridge_stream SC_TwinBridge_meteo SCO_meteo SCO_stream"
 
